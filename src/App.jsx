@@ -1,10 +1,11 @@
 import "./App.css";
+import MainContainer from "./components/MainContainer";
 
 function App() {
   return (
     <>
       <div>
-        <h1>hello weather</h1>
+        <MainContainer/>
       </div>
     </>
   );
