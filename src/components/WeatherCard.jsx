@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoLocationOutline } from "react-icons/io5";
+import myCloud from "../assets/images/cloud.png"
 
 const WeatherCard = ({data, getWeather}) => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -42,7 +43,7 @@ const WeatherCard = ({data, getWeather}) => {
           </button>
         </div>
         <div className="flex justify-center py-3">
-          <img src="/src/assets/images/cloud.png" alt="Cloud" />
+          <img src={myCloud} alt="Cloud" />
         </div>
         <div className="px-3 border-b-2 py-2">
           <div className="flex gap-2 items-center text-xl">
