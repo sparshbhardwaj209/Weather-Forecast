@@ -26,7 +26,7 @@ const MainContainer = () => {
   };
   
   return (
-    <div className={`bg-cover h-screen w-screen bg-no-repeat text-white absolute flex ${theme === "dark" ? "bg-[url('/src/assets/images/frame.png')]" : "bg-blue-400"}`}>
+    <div className={`bg-cover h-auto w-screen bg-no-repeat text-white absolute flex flex-col lg:flex-row ${theme === "dark" ? "bg-[url('/src/assets/images/frame.png')]" : "bg-blue-400"}`}>
       
       <div className={`bg-${theme === "dark" ? "gray-900" : "gray-200"} bg-opacity-75 p-6 rounded-xl h-auto relative m-8 flex-1`}>
         {weatherInfo ? <WeatherCard data={weatherInfo} getWeather={getWeather}/> : <p>Loading...</p>}

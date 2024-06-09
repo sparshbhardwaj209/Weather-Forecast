@@ -30,8 +30,8 @@ const Highlights = ({ data }) => {
       <div className="my-2 mt-12 mb-8">
         <h1 className="text-5xl">Today's Highlights - </h1>
       </div>
-      <div className="flex justify-start font-medium gap-10">
-        <div className="bg-transparent p-4 rounded-lg w-[40%]">
+      <div className="flex flex-col md:flex-row  justify-start font-medium gap-10 ">
+        <div className="bg-transparent p-4 rounded-lg w-full md:w-[40%]  mb-4 md:mb-0 ">
           <div className="flex mb-4 items-center gap-1">
             <h4 className="text-xl">Wind Speed:</h4>
             <p className="text-xl">{hourlyData.windSpeed}</p>
@@ -49,7 +49,7 @@ const Highlights = ({ data }) => {
             <p className="text-xl">{hourlyData.humidity}</p>
           </div>
         </div>
-        <div className="bg-transparent w-[40%] p-4 rounded-lg">
+        <div className="bg-transparent w-full md:w-[40%] md:mb-0 p-4 rounded-lg">
           <div className="flex mb-4 items-center gap-1">
             <h4 className="text-xl">Visibility: </h4>
             <p className="text-xl">{hourlyData.visibility} KM</p>

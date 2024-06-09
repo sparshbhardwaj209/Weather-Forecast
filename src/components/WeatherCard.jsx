@@ -27,7 +27,7 @@ const WeatherCard = ({data, getWeather}) => {
   // },[]);
 
   return (
-    <div className="">
+    <div className="min-w-72">
       <div className="upper">
         <div className="flex search-container w-full justify-center items-center gap-1">
           <input
